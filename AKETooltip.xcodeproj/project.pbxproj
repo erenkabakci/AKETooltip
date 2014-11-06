@@ -14,6 +14,7 @@
 		884905A41A097B66008479B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884905A31A097B66008479B9 /* Images.xcassets */; };
 		884905A71A097B66008479B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884905A51A097B66008479B9 /* LaunchScreen.xib */; };
 		884905B31A097B66008479B9 /* AKETooltipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 884905B21A097B66008479B9 /* AKETooltipTests.m */; };
+		884905C01A0C0BF1008479B9 /* AKETooltip.m in Sources */ = {isa = PBXBuildFile; fileRef = 884905BF1A0C0BF1008479B9 /* AKETooltip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		884905AC1A097B66008479B9 /* AKETooltipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKETooltipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		884905B11A097B66008479B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		884905B21A097B66008479B9 /* AKETooltipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKETooltipTests.m; sourceTree = "<group>"; };
+		884905BE1A0C0BF1008479B9 /* AKETooltip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKETooltip.h; sourceTree = "<group>"; };
+		884905BF1A0C0BF1008479B9 /* AKETooltip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKETooltip.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +84,8 @@
 		884905951A097B66008479B9 /* AKETooltip */ = {
 			isa = PBXGroup;
 			children = (
-				8849059A1A097B66008479B9 /* AppDelegate.h */,
-				8849059B1A097B66008479B9 /* AppDelegate.m */,
-				8849059D1A097B66008479B9 /* ViewController.h */,
-				8849059E1A097B66008479B9 /* ViewController.m */,
-				884905A01A097B66008479B9 /* Main.storyboard */,
-				884905A31A097B66008479B9 /* Images.xcassets */,
-				884905A51A097B66008479B9 /* LaunchScreen.xib */,
+				884905BD1A0C0B2D008479B9 /* Source_Codes */,
+				884905BC1A0C0B04008479B9 /* Test_Scene */,
 				884905961A097B66008479B9 /* Supporting Files */,
 			);
 			path = AKETooltip;
@@ -117,6 +115,29 @@
 				884905B11A097B66008479B9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		884905BC1A0C0B04008479B9 /* Test_Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8849059A1A097B66008479B9 /* AppDelegate.h */,
+				8849059B1A097B66008479B9 /* AppDelegate.m */,
+				8849059D1A097B66008479B9 /* ViewController.h */,
+				8849059E1A097B66008479B9 /* ViewController.m */,
+				884905A01A097B66008479B9 /* Main.storyboard */,
+				884905A31A097B66008479B9 /* Images.xcassets */,
+				884905A51A097B66008479B9 /* LaunchScreen.xib */,
+			);
+			name = Test_Scene;
+			sourceTree = "<group>";
+		};
+		884905BD1A0C0B2D008479B9 /* Source_Codes */ = {
+			isa = PBXGroup;
+			children = (
+				884905BE1A0C0BF1008479B9 /* AKETooltip.h */,
+				884905BF1A0C0BF1008479B9 /* AKETooltip.m */,
+			);
+			name = Source_Codes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +243,7 @@
 				8849059F1A097B66008479B9 /* ViewController.m in Sources */,
 				8849059C1A097B66008479B9 /* AppDelegate.m in Sources */,
 				884905991A097B66008479B9 /* main.m in Sources */,
+				884905C01A0C0BF1008479B9 /* AKETooltip.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +370,7 @@
 				INFOPLIST_FILE = AKETooltip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -358,6 +381,7 @@
 				INFOPLIST_FILE = AKETooltip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
